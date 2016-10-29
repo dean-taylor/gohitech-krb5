@@ -1,0 +1,22 @@
+[libdefaults]
+<% if @dns_lookup_realm -%>
+ dns_lookup_realm = true
+<% end -%>
+<% if @ticket_lifetime -%>
+ ticket_lifetime = <%= @ticket_lifetime %>
+<% end -%>
+<% if @renew_lifetime -%>
+ renew_lifetime = <%= @renew_lifetime %>
+<% end -%>
+<% if @forwardable -%>
+ forwardable = true
+<% end -%>
+<% if @rdns -%>
+ rdns = true
+<% end -%>
+<% if @default_realm -%>
+ default_realm = <%= @default_realm %>
+<% end -%>
+<% if @default_ccache_name -%>
+ default_ccache_name = <%= @default_ccache_name %>
+<% end -%>
